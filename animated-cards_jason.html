@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Type Transitions</title>
+  <link rel="stylesheet" href="css/transitions.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="card active" id="card-1" data-index="1" style="z-index: 1">
+      <p>1</p>
+      <button class="red">Red</button>
+      <h1>Hello!!!</h1>
+      <p>hellllllllo</p>
+    </div>
+    <div class="card" id="card-2" data-index="2" style="z-index: 2">2
+      <h1>Hello!!!</h1>
+      <p>hellllllllo</p>
+
+    </div>
+    <div class="card" id="card-3" data-index="3" style="z-index: 3">3
+      <div data-fitter-happier-text class="fitter-happier">Looking  found it!</div>
+      <p>hellllllllo</p>
+    </div>
+    <div class="card" id="card-4" data-index="4" style="z-index: 4">4
+      <h1>Hello!!!</h1>
+      <p>hellllllllo</p>
+    </div>
+
+    <form>   
+      <button>Add</button>
+    </form>
+  </div>
+
+  <div class="bottom-nav">
+      <div class="controls">
+      <p>Choose a direction</p>
+        <div class="grid-controls">
+
+          <button id="left"><svg class="icon icon_left" viewBox="0 0 48 48"><path d="M20 1 L24 5 L14 16 L24 27 L20 31 L6 16 z "></path></svg></button>
+
+          <button id="down"><svg class="icon icon_down" viewBox="0 0 48 48" style="fill:currentcolor"><path d="M1 12 L16 26 L31 12 L27 8 L16 18 L5 8 z "></path></svg></button>
+
+          <button id="up"><svg class="icon icon_up" viewBox="0 0 48 48" style="fill:currentcolor"><path d="M1 20 L16 6 L31 20 L27 24 L16 14 L5 24 z "></path></svg></button>
+
+          <button id="right"><svg class="icon icon_right" viewBox="0 0 48 48" style="fill:currentcolor"><path d="M12 1 L26 16 L12 31 L8 27 L18 16 L8 5 z "></path></path></svg></button> 
+
+        </div>
+      </div>    
+  </div>
+
+<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+<script src="js/transitions.js"></script>
+<script src="js/dist/fitter-happier-text.js"></script>
+
+<script>
+  var nodes = document.querySelectorAll('[data-fitter-happier-text]');
+  fitterHappierText(nodes, { baseline: 16 });
+</script>
+
+</body>
+</html>
