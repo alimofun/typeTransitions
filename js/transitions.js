@@ -1,5 +1,5 @@
 
-var numberOfCards = 4;
+var numberOfCards = 5;
 
 var gridControls = document.querySelector('.grid-controls');
 gridControls.addEventListener("click", handleButtonClick);
