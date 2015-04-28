@@ -8,7 +8,7 @@ body {
   padding: 0;
   color: rgba(255,255,255,.8);
   font-family: 'Avenir Next', sans-serif;
-  font-weight: 600;
+  font-weight: 700;
   text-transform: uppercase;
   letter-spacing: .2em;
   line-height: 1.5;
@@ -23,7 +23,7 @@ body {
   perspective: 1200px;
 }
 
-.wrapper {
+/*.wrapper {
   padding: 50px;
   border: 15px solid rgba(0,0,0,.2);
   transition: width .2s ease-out;
@@ -33,7 +33,7 @@ body {
   height: 100%;
   overflow: hidden;
   max-width: 65rem;
-}
+}*/
 
 .active {
   visibility: visible !important;
@@ -53,33 +53,38 @@ header {
   background: rgba(255, 255, 255, 0.1);
   align-items: center;
   margin: 0 auto;
-  max-width: 65rem;
+  max-width: 66rem;
 }
 
 .decoration-top {
   border-top: 15px solid rgba(0,0,0,.2);
-  height: 200px;
-  padding-bottom: 20px;
+/*  height: 200px;*/
+/*  padding-bottom: 20px;*/
 
 }
 
 .decoration-bottom {
   border-bottom: 15px solid rgba(0,0,0,.2);
-  padding-bottom: 20px;
+  padding-bottom: 60px;
 }
 
 .paragraph-padding {
-  padding: 30px;
+  padding-top: 30px;
+  padding-bottom: 10px;
 }
 
 p {
   flex:1;
 }
 
+.h2-padding {
+  padding-top: 80px;
+}
+
 .fitter-happier {
-  max-width: 65rem;
+  max-width: 66rem;
   width: 80%;
-  padding-right: 20px;
+ /* padding-right: 20px;*/
 }
 
 #text-padding {
@@ -98,67 +103,76 @@ p {
   padding-top: 50px;
   text-align: center;
   top: 0;
-  left:0;
+/*  left:0;*/
   /*left: -2000px;*/
   visibility: hidden;
-  overflow: hidden;
+ /* transform: translate3d(0,0,0);
+  transform-style: preserve-3d;*/
   transition: .5s linear;
 }
 
 #card-1 {
   font-family: 'Merriweather', sans-serif;
-  font-weight: 700;
+  /*font-weight: 700;*/
   background: #0ac2d2;
+  /*left:-2000px;*/
+  transition: .5s linear;
 }
 
 #card-2 {
-  font-family: 'Abril Fatface', cursive, sans-serif;
+  font-family: 'Cardo', serif;
   background: #7bb7fa;
+ /* left:-2000px;*/
+  transition: .5s linear;
 }
 
 #card-3 {
+  font-family: 'Avenir Next', sans-serif;
+  font-weight: 600;
   background: #60d7a9;
+ /* left:-2000px;*/
 }
 
 #card-4 {
   font-family: 'Droid Sans', sans-serif;
-  font-weight: 700;
+  /*font-weight: 700;*/
   background: #fdc162;
+ /* left:-2000px;*/
 }
 
 #card-5 {
   font-family: 'Arvo', serif;
-  font-weight: 700;
+ /* font-weight: 700;*/
   background: #84c884;
 }
 
 #card-6 {
   font-family: 'Lato', sans-serif;
-  font-weight: 700;
+  /*font-weight: 700;*/
   background: #6d62ab;
 }
 
 #card-7 {
   font-family: 'PT Sans', sans-serif;
-  font-weight: 700;
+/*  font-weight: 700;*/
   background: #52c9f4;
 }
 
 #card-8 {
   font-family: 'Ubuntu', sans-serif;
-  font-weight: 700;
+/*  font-weight: 700;*/
   background: #f9a224;
 }
 
 #card-9 {
   font-family: 'Josefin Slab', serif;
-  font-weight: 700;
+/*  font-weight: 700;*/
   background: #4c52a3;
 }
 
 #card-10 {
   font-family: 'Vollkorn', serif;
-  font-weight: 700;
+ /* font-weight: 700;*/
   background: #333;
 }
 
@@ -209,6 +223,16 @@ button:active {
   transform: scale(0.9375);
 }
 
+a.top_button:hover {
+  color: black;
+  text-decoration: none;
+}
+
+a.top_button:focus {
+  color: black;
+  text-decoration: none;
+}
+
 .twitter {
   height: 30px;
   font-weight: 900;
@@ -220,6 +244,14 @@ button:active {
   margin-right: 3px;
   font-weight: 900;
   width: 80px;
+}
+
+a.dribbble:hover {
+  height: 30px;
+  margin-right: 3px;
+  font-weight: 900;
+  width: 80px;
+  text-decoration: none;
 }
 
 /*///////////////////////////////////////////*/
@@ -255,21 +287,9 @@ button:active {
   background: rgba(255, 255, 255, 0.1);
 }
 
-@media (max-width: 1080px) {
-.top-nav {
-  padding-right: 37px;
-  }
-}
-
 /*///////////////////////////////////////////*/
 /*bottom navigation*/
 
-@media (max-width: 1080px) {
-.bottom-controls {
-  padding: 100px;
-  margin-left: 100px;
-  }
-}
 
 .bottom-controls {
   display: flex;
@@ -286,11 +306,37 @@ button:active {
   left: 0;
   bottom: 0;
   height: 100px;
-  background-color: rgba(0,0,0,.9)
+  background-color: rgba(0,0,0,.8)
 }
 
 @media (max-width: 1080px) {
 .grid-controls {
   padding-right: 37px;
   }
+}
+
+.pt-page-moveToLeft {
+  -webkit-animation: moveToLeft .6s ease both;
+  animation: moveToLeft .6s ease both;
+}
+
+.pt-page-moveFromLeft {
+  -webkit-animation: moveFromLeft .6s ease both;
+  animation: moveFromLeft .6s ease both;
+}
+
+@-webkit-keyframes moveToLeft {
+  from { }
+  to { -webkit-transform: translateX(-100%); }
+}
+@keyframes moveToLeft {
+  from { }
+  to { -webkit-transform: translateX(-100%); transform: translateX(-100%); }
+}
+
+@-webkit-keyframes moveFromLeft {
+  from { -webkit-transform: translateX(-100%); }
+}
+@keyframes moveFromLeft {
+  from { -webkit-transform: translateX(-100%); transform: translateX(-100%); }
 }

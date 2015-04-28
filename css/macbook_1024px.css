@@ -1,12 +1,22 @@
-/*.fitter-happier {
+.fitter-happier {
 	max-width: 45rem;
 }*/
 
+.decoration-bottom {
+  border-bottom: 15px solid rgba(0,0,0,.2);
+  padding-bottom: 30px;
+}
 
-.bottom-controls {
+
+.h2-padding {
+  padding-top: 50px;
+}
+
+
+/*.bottom-controls {*/
 /*	padding: 100px;
 	margin-left: 100px;*/
-}
+/*}*/
 
 /*.button-controls {
 	margin-right: 124px;
@@ -18,4 +28,4 @@
 
 p {
 	padding-left: 120px;
-}*/
+}

@@ -32,6 +32,8 @@ function handleKeyboardNavigation(e) {
 function changeImage(direction) {
   // get the active card based on the .active class
   var currentCard = document.querySelector('.active');
+  currentCard.classList.add('pt-page-moveToLeft');
+
 
   // figure out the active card's number
   var currentCardNumber = parseInt(currentCard.getAttribute('data-index'));
@@ -53,7 +55,8 @@ function changeImage(direction) {
   var nextCardSelector = '#card-' + nextCardNumber;
   var nextCard = document.querySelector(nextCardSelector);
 
-  nextCard.classList.add('active');
+  nextCard.classList.add('active'); 
+  currentCard.classList.add('pt-page-moveFromLeft');
   currentCard.classList.remove('active');
 
 }
