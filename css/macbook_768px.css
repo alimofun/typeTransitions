@@ -1,5 +1,5 @@
 .h2-padding {
-  padding-top: 40px;
+  padding-top: 20px;
 }
 
 .decoration-bottom {
@@ -8,4 +8,16 @@
 
 .top-nav {
   padding-right: 27px;
+}
+
+.paragraph-padding {
+  padding-right: 30px;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+}
+
+p {
+  padding-right: 30px;
+  padding-left: 30px;
 }

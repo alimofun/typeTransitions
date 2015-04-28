@@ -1,5 +1,17 @@
 .h2-padding {
+  padding-top: 10px;
+}
+
+.paragraph-padding {
+  padding-right: 30px;
   padding-top: 30px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+}
+
+p {
+  padding-right: 30px;
+  padding-left: 30px;
 }
 
 .decoration-bottom {

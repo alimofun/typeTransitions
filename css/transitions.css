@@ -78,7 +78,7 @@ p {
 }
 
 .h2-padding {
-  padding-top: 80px;
+  padding-top: 40px;
 }
 
 .fitter-happier {
@@ -99,7 +99,7 @@ p {
   height: 100%;
   width: 100%;
   position: absolute;
-  overflow: scroll;
+/*  overflow: scroll;*/
   padding-top: 50px;
   text-align: center;
   top: 0;
@@ -112,11 +112,10 @@ p {
 }
 
 #card-1 {
-  font-family: 'Merriweather', sans-serif;
-  /*font-weight: 700;*/
-  background: #0ac2d2;
-  /*left:-2000px;*/
-  transition: .5s linear;
+  font-family: 'Avenir Next', sans-serif;
+  font-weight: 600;
+  background: #60d7a9;
+ /* left:-2000px;*/
 }
 
 #card-2 {
@@ -127,10 +126,11 @@ p {
 }
 
 #card-3 {
-  font-family: 'Avenir Next', sans-serif;
-  font-weight: 600;
-  background: #60d7a9;
- /* left:-2000px;*/
+  font-family: 'Merriweather', sans-serif;
+  /*font-weight: 700;*/
+  background: #0ac2d2;
+  /*left:-2000px;*/
+  transition: .5s linear;
 }
 
 #card-4 {
@@ -205,6 +205,7 @@ button {
 }
 
 button:hover {
+    background-size: contain;
     text-decoration: none;
     -webkit-transform: scale(1.0625);
     -ms-transform: scale(1.0625);
@@ -224,8 +225,10 @@ button:active {
 }
 
 a.top_button:hover {
-  color: black;
+  color: rgba(0,0,0,.6);
+
   text-decoration: none;
+  background-size: contain;
 }
 
 a.top_button:focus {
@@ -252,6 +255,7 @@ a.dribbble:hover {
   font-weight: 900;
   width: 80px;
   text-decoration: none;
+  background-size: contain;
 }
 
 /*///////////////////////////////////////////*/
@@ -315,6 +319,25 @@ a.dribbble:hover {
   }
 }
 
+.pt-page {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
 .pt-page-moveToLeft {
   -webkit-animation: moveToLeft .6s ease both;
   animation: moveToLeft .6s ease both;
@@ -323,6 +346,36 @@ a.dribbble:hover {
 .pt-page-moveFromLeft {
   -webkit-animation: moveFromLeft .6s ease both;
   animation: moveFromLeft .6s ease both;
+}
+
+.pt-page-moveToRight {
+  -webkit-animation: moveToRight .6s ease both;
+  animation: moveToRight .6s ease both;
+}
+
+.pt-page-moveFromRight {
+  -webkit-animation: moveFromRight .6s ease both;
+  animation: moveFromRight .6s ease both;
+}
+
+.pt-page-moveToTop {
+  -webkit-animation: moveToTop .6s ease both;
+  animation: moveToTop .6s ease both;
+}
+
+.pt-page-moveFromTop {
+  -webkit-animation: moveFromTop .6s ease both;
+  animation: moveFromTop .6s ease both;
+}
+
+.pt-page-moveToBottom {
+  -webkit-animation: moveToBottom .6s ease both;
+  animation: moveToBottom .6s ease both;
+}
+
+.pt-page-moveFromBottom {
+  -webkit-animation: moveFromBottom .6s ease both;
+  animation: moveFromBottom .6s ease both;
 }
 
 @-webkit-keyframes moveToLeft {
