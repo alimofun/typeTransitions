@@ -46,8 +46,8 @@ function changeImage(direction) {
   // get the active card based on the .active class
   var currentCard = document.querySelector('.active');
   
-  currentCard.classList.remove('pt-page-moveFromLeft');
-  currentCard.classList.remove('pt-page-moveFromRight');
+  currentCard.classList.remove('moveFromLeft');
+  currentCard.classList.remove('moveFromRight');
 
   // figure out the active card's number
   var currentCardNumber = parseInt(currentCard.getAttribute('data-index'));
@@ -74,10 +74,10 @@ function changeImage(direction) {
 
 
   if (direction == "left"){ 
-    nextCard.classList.add('pt-page-moveFromLeft');
+    nextCard.classList.add('moveFromLeft');
 
   } else if (direction == "right"){
-    nextCard.classList.add('pt-page-moveFromRight');
+    nextCard.classList.add('moveFromRight');
   }
 
   nextCard.classList.add('active');

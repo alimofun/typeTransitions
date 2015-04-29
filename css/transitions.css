@@ -299,22 +299,22 @@ a.dribbble:hover {
   transition: .5s cubic-bezier(0.76, -0.07, 0.52, 0.96);
 }
 
-.pt-page-moveToLeft {
+.moveToLeft {
   -webkit-animation: moveToLeft .5s cubic-bezier(0.76, -0.07, 0.52, 0.96);
   animation: moveToLeft .5s cubic-bezier(0.76, -0.07, 0.52, 0.96);
 }
 
-.pt-page-moveFromLeft {
+.moveFromLeft {
   -webkit-animation: moveFromLeft .5s cubic-bezier(0.76, -0.07, 0.52, 0.96);
   animation: moveFromLeft .5s cubic-bezier(0.76, -0.07, 0.52, 0.96);
 }
 
-.pt-page-moveToRight {
+.moveToRight {
   -webkit-animation: moveToRight .5s cubic-bezier(0.76, -0.07, 0.52, 0.96);
   animation: moveToRight .5s cubic-bezier(0.76, -0.07, 0.52, 0.96);
 }
 /*cubic-bezier(0.76, -0.07, 0.52, 0.96);*/
-.pt-page-moveFromRight {
+.moveFromRight {
   -webkit-animation: moveFromRight .5s cubic-bezier(0.76, -0.07, 0.52, 0.96);
   animation: moveFromRight .5s cubic-bezier(0.76, -0.07, 0.52, 0.96);
 }
