@@ -32,32 +32,49 @@ function handleKeyboardNavigation(e) {
 function changeImage(direction) {
   // get the active card based on the .active class
   var currentCard = document.querySelector('.active');
-  currentCard.classList.add('pt-page-moveToLeft');
+  
 
 
   // figure out the active card's number
   var currentCardNumber = parseInt(currentCard.getAttribute('data-index'));
   
   if (direction == "left") {
+    // currentCard.classList.add('pt-page-moveToLeft');
     nextCardNumber = currentCardNumber - 1;
     if (nextCardNumber < 1) {
       nextCardNumber = numberOfCards;
     }
   } else if (direction == "right") {
+    // currentCard.classList.add('pt-page-moveToRight');
     nextCardNumber = currentCardNumber + 1;
     if (nextCardNumber > numberOfCards) {
       nextCardNumber = 1;
     }
   }
 
-  console.log(nextCardNumber);
 
   var nextCardSelector = '#card-' + nextCardNumber;
   var nextCard = document.querySelector(nextCardSelector);
 
-  nextCard.classList.add('active'); 
-  currentCard.classList.add('pt-page-moveFromLeft');
+
+  if (direction == "left"){ 
+    nextCard.classList.add('pt-page-moveFromLeft');
+
+  } else if (direction == "right"){
+    nextCard.classList.add('pt-page-moveFromRight');
+  }
+
+  nextCard.classList.add('active');
+
+  // nextCard.classList.remove('pt-page-moveFromLeft');
+  // nextCard.classList.remove('pt-page-moveFromRight');
+  
+  // currentCard.classList.add('pt-page-moveFromLeft');
   currentCard.classList.remove('active');
+
+  currentCard.classList.remove('pt-page-moveFromLeft');
+  currentCard.classList.remove('pt-page-moveFromRight');
+
 
 }
 

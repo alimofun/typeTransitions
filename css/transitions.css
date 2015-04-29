@@ -38,6 +38,7 @@ body {
 .active {
   visibility: visible !important;
   overflow: hidden;
+  z-index: 999;
 }
 
 header {
@@ -108,7 +109,7 @@ p {
   visibility: hidden;
  /* transform: translate3d(0,0,0);
   transform-style: preserve-3d;*/
-  transition: .5s linear;
+  /*transition: .5s linear;*/
 }
 
 #card-1 {
