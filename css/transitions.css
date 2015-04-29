@@ -23,18 +23,6 @@ body {
   perspective: 1200px;
 }
 
-/*.wrapper {
-  padding: 50px;
-  border: 15px solid rgba(0,0,0,.2);
-  transition: width .2s ease-out;
-  position: relative;
-  top: 0;
-  left: 0;
-  height: 100%;
-  overflow: hidden;
-  max-width: 65rem;
-}*/
-
 .active {
   visibility: visible !important;
   overflow: hidden;
@@ -123,7 +111,7 @@ p {
   font-family: 'Cardo', serif;
   background: #7bb7fa;
  /* left:-2000px;*/
-  transition: .5s linear;
+
 }
 
 #card-3 {
@@ -131,7 +119,7 @@ p {
   /*font-weight: 700;*/
   background: #0ac2d2;
   /*left:-2000px;*/
-  transition: .5s linear;
+
 }
 
 #card-4 {
@@ -393,4 +381,20 @@ a.dribbble:hover {
 }
 @keyframes moveFromLeft {
   from { -webkit-transform: translateX(-100%); transform: translateX(-100%); }
+}
+
+@-webkit-keyframes moveToRight { 
+  from { }
+  to { -webkit-transform: translateX(100%); }
+}
+@keyframes moveToRight { 
+  from { }
+  to { -webkit-transform: translateX(100%); transform: translateX(100%); }
+}
+
+@-webkit-keyframes moveFromRight {
+  from { -webkit-transform: translateX(100%); }
+}
+@keyframes moveFromRight {
+  from { -webkit-transform: translateX(100%); transform: translateX(100%); }
 }
