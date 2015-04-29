@@ -47,9 +47,6 @@ header {
 
 .decoration-top {
   border-top: 15px solid rgba(0,0,0,.2);
-/*  height: 200px;*/
-/*  padding-bottom: 20px;*/
-
 }
 
 .decoration-bottom {
@@ -73,7 +70,6 @@ p {
 .fitter-happier {
   max-width: 66rem;
   width: 80%;
- /* padding-right: 20px;*/
 }
 
 #text-padding {
@@ -88,13 +84,13 @@ p {
   height: 100%;
   width: 100%;
   position: absolute;
-/*  overflow: scroll;*/
+  overflow: scroll;
   padding-top: 50px;
   text-align: center;
   top: 0;
-/*  left:0;*/
-  /*left: -2000px;*/
   visibility: hidden;
+ /* transition: .5s cubic-bezier(0.13, 1.13, 1, 1);*/
+ transition: .5s cubic-bezier(0.39, 0.58, 0.57, 1);
  /* transform: translate3d(0,0,0);
   transform-style: preserve-3d;*/
   /*transition: .5s linear;*/
@@ -104,64 +100,50 @@ p {
   font-family: 'Avenir Next', sans-serif;
   font-weight: 600;
   background: #60d7a9;
- /* left:-2000px;*/
 }
 
 #card-2 {
   font-family: 'Cardo', serif;
   background: #7bb7fa;
- /* left:-2000px;*/
-
 }
 
 #card-3 {
   font-family: 'Merriweather', sans-serif;
-  /*font-weight: 700;*/
   background: #0ac2d2;
-  /*left:-2000px;*/
-
 }
 
 #card-4 {
   font-family: 'Droid Sans', sans-serif;
-  /*font-weight: 700;*/
   background: #fdc162;
- /* left:-2000px;*/
 }
 
 #card-5 {
   font-family: 'Arvo', serif;
- /* font-weight: 700;*/
   background: #84c884;
 }
 
 #card-6 {
   font-family: 'Lato', sans-serif;
-  /*font-weight: 700;*/
   background: #6d62ab;
 }
 
 #card-7 {
   font-family: 'PT Sans', sans-serif;
-/*  font-weight: 700;*/
   background: #52c9f4;
 }
 
 #card-8 {
   font-family: 'Ubuntu', sans-serif;
-/*  font-weight: 700;*/
   background: #f9a224;
 }
 
 #card-9 {
   font-family: 'Josefin Slab', serif;
-/*  font-weight: 700;*/
   background: #4c52a3;
 }
 
 #card-10 {
   font-family: 'Vollkorn', serif;
- /* font-weight: 700;*/
   background: #333;
 }
 
@@ -203,7 +185,6 @@ button:hover {
 
 button:focus {
   outline:0;
-  /*border-radius: 3px;*/
   box-shadow: 0 0 0 2px rgba(0,0,0,.10);
 }
 
@@ -215,7 +196,6 @@ button:active {
 
 a.top_button:hover {
   color: rgba(0,0,0,.6);
-
   text-decoration: none;
   background-size: contain;
 }
@@ -316,55 +296,27 @@ a.dribbble:hover {
   left: 0;
   visibility: hidden;
   overflow: hidden;
-  -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -webkit-transform: translate3d(0, 0, 0);
-  -moz-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-  -webkit-transform-style: preserve-3d;
-  -moz-transform-style: preserve-3d;
-  transform-style: preserve-3d;
+  transition: .5s cubic-bezier(0.76, -0.07, 0.52, 0.96);
 }
 
-.pt-page-moveToLeft {
-  -webkit-animation: moveToLeft .6s ease both;
-  animation: moveToLeft .6s ease both;
+.moveToLeft {
+  -webkit-animation: moveToLeft .5s cubic-bezier(0.76, -0.07, 0.52, 0.96);
+  animation: moveToLeft .5s cubic-bezier(0.76, -0.07, 0.52, 0.96);
 }
 
-.pt-page-moveFromLeft {
-  -webkit-animation: moveFromLeft .6s ease both;
-  animation: moveFromLeft .6s ease both;
+.moveFromLeft {
+  -webkit-animation: moveFromLeft .5s cubic-bezier(0.76, -0.07, 0.52, 0.96);
+  animation: moveFromLeft .5s cubic-bezier(0.76, -0.07, 0.52, 0.96);
 }
 
-.pt-page-moveToRight {
-  -webkit-animation: moveToRight .6s ease both;
-  animation: moveToRight .6s ease both;
+.moveToRight {
+  -webkit-animation: moveToRight .5s cubic-bezier(0.76, -0.07, 0.52, 0.96);
+  animation: moveToRight .5s cubic-bezier(0.76, -0.07, 0.52, 0.96);
 }
-
-.pt-page-moveFromRight {
-  -webkit-animation: moveFromRight .6s ease both;
-  animation: moveFromRight .6s ease both;
-}
-
-.pt-page-moveToTop {
-  -webkit-animation: moveToTop .6s ease both;
-  animation: moveToTop .6s ease both;
-}
-
-.pt-page-moveFromTop {
-  -webkit-animation: moveFromTop .6s ease both;
-  animation: moveFromTop .6s ease both;
-}
-
-.pt-page-moveToBottom {
-  -webkit-animation: moveToBottom .6s ease both;
-  animation: moveToBottom .6s ease both;
-}
-
-.pt-page-moveFromBottom {
-  -webkit-animation: moveFromBottom .6s ease both;
-  animation: moveFromBottom .6s ease both;
+/*cubic-bezier(0.76, -0.07, 0.52, 0.96);*/
+.moveFromRight {
+  -webkit-animation: moveFromRight .5s cubic-bezier(0.76, -0.07, 0.52, 0.96);
+  animation: moveFromRight .5s cubic-bezier(0.76, -0.07, 0.52, 0.96);
 }
 
 @-webkit-keyframes moveToLeft {
@@ -398,3 +350,23 @@ a.dribbble:hover {
 @keyframes moveFromRight {
   from { -webkit-transform: translateX(100%); transform: translateX(100%); }
 }
+
+/*.pt-page-moveToTop {
+  -webkit-animation: moveToTop .6s ease both;
+  animation: moveToTop .6s ease both;
+}
+
+.pt-page-moveFromTop {
+  -webkit-animation: moveFromTop .6s ease both;
+  animation: moveFromTop .6s ease both;
+}
+
+.pt-page-moveToBottom {
+  -webkit-animation: moveToBottom .6s ease both;
+  animation: moveToBottom .6s ease both;
+}
+
+.pt-page-moveFromBottom {
+  -webkit-animation: moveFromBottom .6s ease both;
+  animation: moveFromBottom .6s ease both;
+}*/
