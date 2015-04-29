@@ -19,21 +19,33 @@ function handleButtonClick(e) {
   changeImage(direction);
 }
 
+// Keydown function to change direction on keyboard
+///////////////////////////
 
-function handleKeyboardNavigation(e) {
+window.addEventListener("keydown", function  (event) {
+  if (event.defaultPrevented) {
+    return; // Should do nothing if the key event was already consumed.
+  }
+  switch (event.keyCode) {
+    case 39:
+      // Do something for "left arrow" key press.
+      changeImage("right");
+      break;
+    case 37: 
+      changeImage("left");
+      // Do something for "right arrow" key press.
+      break;
 
-  var direction = "left";
+    }
+  });
 
-  changeImage(direction);
-}
-
-
+//change direction on button control
+////////////////////////////
 
 function changeImage(direction) {
   // get the active card based on the .active class
   var currentCard = document.querySelector('.active');
   
-
 
   // figure out the active card's number
   var currentCardNumber = parseInt(currentCard.getAttribute('data-index'));
@@ -52,6 +64,8 @@ function changeImage(direction) {
     }
   }
 
+//animation control
+///////////////////////////////
 
   var nextCardSelector = '#card-' + nextCardNumber;
   var nextCard = document.querySelector(nextCardSelector);
@@ -77,51 +91,3 @@ function changeImage(direction) {
 
 
 }
-
-
-
-
-// var card = document.querySelector (".card");
-// var card1= $("#card-1");
-
-// // console.log(card);
-// // console.log($("#left"));
-// $("#left").on("click", function() {
-//   $(".card").addClass(function( index, currentClass) {
-//     var addedClass;
-//     var current = document.querySelector('')
-//     console.log(index);
-//     console.log ('currentclass: ', currentClass);
-//     removeClass();
-
-//     switch (currentClass) {
-//       case "card":
-//         addedClass = "card-2";
-//         return addedClass;
-//         break;
-
-//       case "card-2":
-//         return addedClass;
-//         break; "card-3"
-
-//       case "card-3":
-//       break;
-
-//       case "card-4":
-//       break;
-
-//       case "card-5":
-//       break;
-//     }
-//   });
-// });
-
-// function removeClass(presentClass) {
-//     $("card").removeClass(presentClass);
-
-// }
-
-// original animation code
-// $(".card").on("click", function() {
-//   this.style.left = "-2000px"
-// })
