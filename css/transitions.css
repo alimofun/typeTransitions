@@ -96,53 +96,53 @@ p {
   /*transition: .5s linear;*/
 }
 
-#card-1 {
+#card-0 {
   font-family: 'Avenir Next', sans-serif;
   font-weight: 600;
   background: #60d7a9;
 }
 
-#card-2 {
+#card-1 {
   font-family: 'Cardo', serif;
   background: #7bb7fa;
 }
 
-#card-3 {
+#card-2 {
   font-family: 'Merriweather', sans-serif;
   background: #0ac2d2;
 }
 
-#card-4 {
+#card-3 {
   font-family: 'Droid Sans', sans-serif;
   background: #fdc162;
 }
 
-#card-5 {
+#card-4 {
   font-family: 'Arvo', serif;
   background: #84c884;
 }
 
-#card-6 {
+#card-5 {
   font-family: 'Lato', sans-serif;
   background: #6d62ab;
 }
 
-#card-7 {
+#card-6 {
   font-family: 'PT Sans', sans-serif;
   background: #52c9f4;
 }
 
-#card-8 {
+#card-7 {
   font-family: 'Ubuntu', sans-serif;
   background: #f9a224;
 }
 
-#card-9 {
+#card-8 {
   font-family: 'Josefin Slab', serif;
   background: #4c52a3;
 }
 
-#card-10 {
+#card-9 {
   font-family: 'Vollkorn', serif;
   background: #333;
 }
