@@ -29,20 +29,9 @@ body {
   z-index: 999;
 }
 
-header {
-  display: flex;
-  justify-content: flex-end;
-  padding-top: 15px;
-  font-size: 0.68em;
-  line-height: 2.2;
-  top: 0;
-  left: 0;
-  width: 100%;
-  position: fixed;
-  background: rgba(255, 255, 255, 0.1);
-  align-items: center;
-  margin: 0 auto;
+.fitter-happier {
   max-width: 66rem;
+  width: 80%;
 }
 
 .decoration-top {
@@ -63,14 +52,6 @@ p {
   flex:1;
 }
 
-.h2-padding {
-  padding-top: 40px;
-}
-
-.fitter-happier {
-  max-width: 66rem;
-  width: 80%;
-}
 
 #text-padding {
   padding-bottom: 150px;
@@ -78,6 +59,10 @@ p {
 
 /*///////////////////////////////////////////*/
 /*//Cards*/ 
+
+#card-0 .h2-padding {
+  padding-top: 0px;
+}
 
 .card {
   padding-top: 50px;
@@ -89,11 +74,7 @@ p {
   text-align: center;
   top: 0;
   visibility: hidden;
- /* transition: .5s cubic-bezier(0.13, 1.13, 1, 1);*/
- transition: .5s cubic-bezier(0.39, 0.58, 0.57, 1);
- /* transform: translate3d(0,0,0);
-  transform-style: preserve-3d;*/
-  /*transition: .5s linear;*/
+  transition: .5s cubic-bezier(0.39, 0.58, 0.57, 1);
 }
 
 #card-0 {
@@ -176,11 +157,11 @@ button {
 }
 
 button:hover {
-    background-size: contain;
-    text-decoration: none;
-    -webkit-transform: scale(1.0625);
-    -ms-transform: scale(1.0625);
-    transform: scale(1.0625);
+  background-size: contain;
+  text-decoration: none;
+  -webkit-transform: scale(1.0625);
+  -ms-transform: scale(1.0625);
+  transform: scale(1.0625);
 }
 
 button:focus {
@@ -263,7 +244,6 @@ a.dribbble:hover {
 /*///////////////////////////////////////////*/
 /*bottom navigation*/
 
-
 .bottom-controls {
   display: flex;
   align-items: center;
@@ -288,17 +268,6 @@ a.dribbble:hover {
   }
 }
 
-.pt-page {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  visibility: hidden;
-  overflow: hidden;
-  transition: .5s cubic-bezier(0.76, -0.07, 0.52, 0.96);
-}
-
 .moveToLeft {
   -webkit-animation: moveToLeft .5s cubic-bezier(0.76, -0.07, 0.52, 0.96);
   animation: moveToLeft .5s cubic-bezier(0.76, -0.07, 0.52, 0.96);
@@ -313,7 +282,7 @@ a.dribbble:hover {
   -webkit-animation: moveToRight .5s cubic-bezier(0.76, -0.07, 0.52, 0.96);
   animation: moveToRight .5s cubic-bezier(0.76, -0.07, 0.52, 0.96);
 }
-/*cubic-bezier(0.76, -0.07, 0.52, 0.96);*/
+
 .moveFromRight {
   -webkit-animation: moveFromRight .5s cubic-bezier(0.76, -0.07, 0.52, 0.96);
   animation: moveFromRight .5s cubic-bezier(0.76, -0.07, 0.52, 0.96);
@@ -350,23 +319,3 @@ a.dribbble:hover {
 @keyframes moveFromRight {
   from { -webkit-transform: translateX(100%); transform: translateX(100%); }
 }
-
-/*.pt-page-moveToTop {
-  -webkit-animation: moveToTop .6s ease both;
-  animation: moveToTop .6s ease both;
-}
-
-.pt-page-moveFromTop {
-  -webkit-animation: moveFromTop .6s ease both;
-  animation: moveFromTop .6s ease both;
-}
-
-.pt-page-moveToBottom {
-  -webkit-animation: moveToBottom .6s ease both;
-  animation: moveToBottom .6s ease both;
-}
-
-.pt-page-moveFromBottom {
-  -webkit-animation: moveFromBottom .6s ease both;
-  animation: moveFromBottom .6s ease both;
-}*/

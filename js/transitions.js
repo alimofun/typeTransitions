@@ -90,18 +90,6 @@ function changeImage(direction) {
   
 }
 
-
-// <div class="card" id="card-6" data-index="6">
-//       <p class="paragraph-padding">
-//         Right now you are looking at Google font:
-        // <a href="http://www.google.com/fonts/specimen/Lato">Lato</a>
-//       </p>
-//       <div data-fitter-happier-text class="fitter-happier decoration-top">Blowzy </div>
-//       <div class="h2-padding">
-//         <div data-fitter-happier-text class="fitter-happier decoration-bottom">red vixens fight for a quick jump</div>
-//       </div>
-//     </div>
-
 // build list 
 
 var cards = [
@@ -113,7 +101,7 @@ var cards = [
     },
     { 
       fontName:"Cardo",
-      link:"http://www.google.com/fonts/specimen/Abril+Fatface",
+      link:"http://www.google.com/fonts/specimen/Cardo",
       title:"Praty",
       pangram: "jokers quizzically vexed me with fibs"
     },

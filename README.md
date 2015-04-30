@@ -4,4 +4,4 @@ This project was for my first html/css/javascript class. A rediculous amount of 
 
 http://alimofun.github.io/typeTransitions/
 
-Inpisred by Fitter-happier-text (jxnblk). Made by me, Sean Kesterson
+Inspired by Fitter-happier-text (jxnblk). Made by me, Sean Kesterson
