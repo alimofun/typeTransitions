@@ -68,7 +68,7 @@ function changeImage(direction) {
       nextCardNumber = 0;
     }
   }
-  console.log(nextCardNumber, currentCardNumber)
+
 //animation control
 ///////////////////////////////
 
