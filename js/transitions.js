@@ -1,4 +1,5 @@
-
+// Button listeners
+///////////////////////////
 
 
 var gridControls = document.querySelector('.grid-controls');
@@ -55,13 +56,13 @@ function changeImage(direction) {
   var currentCardNumber = parseInt(currentCard.getAttribute('data-index'));
   
   if (direction == "left") {
-    // currentCard.classList.add('pt-page-moveToLeft');
+    
     nextCardNumber = currentCardNumber - 1;
     if (nextCardNumber < 0) {
       nextCardNumber = numberOfCards - 1;
     }
   } else if (direction == "right") {
-    // currentCard.classList.add('pt-page-moveToRight');
+    
     nextCardNumber = currentCardNumber + 1;
     if (nextCardNumber >= numberOfCards) {
       nextCardNumber = 0;
@@ -83,7 +84,6 @@ function changeImage(direction) {
   }
 
   nextCard.classList.add('active');
-
 
   currentCard.classList.remove('active');
 
